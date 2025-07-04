@@ -1,0 +1,7 @@
+/* Background color setting and removing extra margins*/
+* {
+    margin: 0;
+    padding: 0;
+    border: border-box;
+    background-color: #e3e6e6;
+}
