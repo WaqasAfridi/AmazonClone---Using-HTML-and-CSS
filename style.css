@@ -1,7 +1,314 @@
+/* Amazon Ember Font (Web-Optimized) */
+@font-face {
+    font-family: 'AmazonEmber';
+    src: url('fonts/amazon-ember/AmazonEmber_Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AmazonEmber';
+    src: url('fonts/amazon-ember/AmazonEmber_Bd.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AmazonEmber';
+    src: url('fonts/amazon-ember/AmazonEmber_Lt.woff2') format('woff2');
+    font-weight: 300; /* Light */
+    font-style: normal;
+}
+
+/* General Body Styling */
+body {
+    font-family: 'AmazonEmber', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 /* Background color setting and removing extra margins*/
 * {
     margin: 0;
     padding: 0;
-    border: border-box;
-    background-color: #e3e6e6;
+    box-sizing: border-box;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Top Styling*/
+.header-top {
+    background-color: #0F1111;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-top-left {
+    display: flex;
+    align-items: center;
+    width: 250px;
+}
+.logo {
+    height: 50px;
+    width: 118px;
+    padding: 1px 8px 0px 6px;
+    margin: 10px;
+    background-image: url(images/Amazon-Logo.png);
+    background-size: 99px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+}
+
+.delivery-location {
+    height: 60px;
+    width: 95px;
+    display: flex;
+    color: white;
+    align-items: center;
+    align-content: center;
+}
+
+.location-icon {
+    height: 18px;
+    width: 15px;
+    color:white
+}
+
+.location-icon i {
+    margin-top: 5px;
+}
+
+.location-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.location-label{
+    font-size:0.75rem;
+    color: #CCCCCC;
+}
+
+.location-name {
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.header-top-center {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    min-width: 440px;
+}
+
+.alldropdown {
+    width: 52px;
+    height: 40px;
+    color: #555555;
+    background-color: #E6E6E6;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 0.75rem;
+    border-right: 1px solid #cdcdcd;
+}
+
+.alldropdown i {
+    font-size: 0.6rem;
+    color: #666666;
+    align-self: flex-start;
+}
+.search-input {
+    flex: 1;
+    height: 40px;
+    padding: 0 10px;
+    background-color: white;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+
+
+input[type="text"] {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 0.875rem;
+    border-radius: 0px;
+}
+
+.search-button {
+    width: 45px;
+    height: 40px;
+    background-color: #febd69;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.25rem;
+    border: none;
+}
+
+.header-top-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 435px;
+    height: 55px;
+    
+}
+
+.language-selector {
+    width: 60px;
+    height:25px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.language-flag {
+    width: 24px;
+    height: 18px;
+    background-image: url(images/US-flag.png);
+    background-size: cover;
+    align-items: flex-end;
+}
+
+.language-name{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 700;
+    align-self:flex-end;
+    width: 28px;
+    
+}
+
+.language-text {
+    height: 15px;
+    align-self:flex-end;
+}
+
+.language-name i {
+    font-size: 0.6rem;
+    color: #a7acb2;
+    align-self:flex-end;
+}
+
+.signin-box {
+    width: 120px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.signin-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 120px;
+}
+
+.signin-label{
+    font-size:0.75rem;
+    color: #CCCCCC;
+}
+
+.signin-name {
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.signin-box i {
+    font-size: 0.6rem;
+    color: #a7acb2;
+    align-self:flex-end;
+    margin-bottom: 2px;
+}
+
+
+
+
+.return-order-box {
+    width: 60px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.order-box-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60px;
+}
+
+.order-box-label{
+    font-size:0.75rem;
+    color: #CCCCCC;
+}
+
+.order-box-name {
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.cart-box {
+    width: 66px;
+    height: 30px;
+    display: flex;
+    align-items: end;
+    justify-content:center;
+    color: white;
+}
+
+.cart-icon-and-count {
+    /* width: 25px; */
+    height: 38px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-count-text{
+    font-size: 0.75rem;
+    color: #f08804;
+}
+.cart-icon {
+    font-size: 1rem;
+    flex: 1.5;
+}
+
+.cart-box-name {
+    width: 28px;
+    height: 30px;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    flex: 1;
+}
+
+
