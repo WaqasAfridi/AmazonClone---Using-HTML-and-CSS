@@ -36,6 +36,7 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
 /*==============================================================================*/
 /*==============================================================================*/
 /*                           HEADER TOP STYLING                                 */
@@ -52,6 +53,7 @@ a {
 .header-top-left {
     display: flex;
     align-items: center;
+    height: 92%;
     width: 250px;
 }
 .logo {
@@ -177,50 +179,68 @@ input[type="text"] {
     
 }
 
-.language-selector {
-    width: 60px;
-    height:25px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-evenly;
-}
-
-.language-flag {
-    width: 24px;
-    height: 18px;
-    background-image: url(images/US-flag.png);
-    background-size: cover;
-    align-items: flex-end;
-}
-
-.language-name{
+.language-selector{
+    width: 45.375px;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content:space-between;
     color: white;
-    font-size: 0.875rem;
-    font-weight: 700;
-    align-self:flex-end;
-    width: 28px;
+}
+
+.language-flag-and-name {
+    width: 45px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.empty-box {
+    height: 7px;
+    width: 100%;
+}
+
+.filled-box {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.language-flag {
+    width: 21.6px;
+    height: 16.2px;
+    margin-right: 2px;
+    background-image: url(images/US-flag.png);
+    background-size: cover;
     
 }
 
-.language-text {
-    height: 15px;
-    align-self:flex-end;
+.language-name {
+    width: 21px;
+    height: 16px;
 }
 
-.language-name i {
+.language-text {
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 700;}
+
+
+.dropdown-icon-language i {
     font-size: 0.6rem;
     color: #a7acb2;
-    align-self:flex-end;
+    margin-top: 20px;
+    height: 10px;
 }
 
 .signin-box {
-    width: 120px;
+    width: 135px;
     height: 30px;
     display: flex;
     align-items: center;
+    justify-content: center;
     color: white;
 }
 
@@ -228,12 +248,12 @@ input[type="text"] {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 120px;
+    justify-content: center;
+    width: 106px;
 }
 
 .signin-label{
     font-size:0.75rem;
-    color: #CCCCCC;
 }
 
 .signin-name {
@@ -244,15 +264,15 @@ input[type="text"] {
 .signin-box i {
     font-size: 0.6rem;
     color: #a7acb2;
-    align-self:flex-end;
-    margin-bottom: 2px;
+    margin-top: 20px;
+    height: 10px;
 }
 
 
 
 
 .return-order-box {
-    width: 60px;
+    width: 70px;
     height: 30px;
     display: flex;
     align-items: center;
@@ -264,12 +284,11 @@ input[type="text"] {
     flex-direction: column;
     align-items: flex-start;
     width: 60px;
+    margin: auto;
 }
 
 .order-box-label{
-    font-size:0.75rem;
-    color: #CCCCCC;
-}
+    font-size:0.75rem;}
 
 .order-box-name {
     font-size: 0.875rem;
@@ -283,6 +302,7 @@ input[type="text"] {
     align-items: end;
     justify-content:center;
     color: white;
+    padding-bottom: 9px;
 }
 
 .cart-icon-and-count {
@@ -295,11 +315,11 @@ input[type="text"] {
 }
 
 .cart-count-text{
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     color: #f08804;
 }
 .cart-icon {
-    font-size: 1rem;
+    font-size: 1.5rem;
     flex: 1.5;
 }
 
@@ -373,7 +393,7 @@ input[type="text"] {
 }
 
 .header-bottom-center ul li {
-    height:39px;
+    height:37px;
     font-size: 0.875rem;
     font-weight: 500;
     cursor: pointer;
@@ -388,3 +408,78 @@ input[type="text"] {
     height: 100%;
 }
 
+/*==============================================================================*/
+/*==============================================================================*/
+/*                  outlines for items in header on hover                       */
+/*==============================================================================*/
+/*==============================================================================*/
+
+.oulines:hover {
+    outline:white 1px solid;
+    border-radius: 1px;
+}
+
+.item-height {
+    height: 90%;
+}
+
+/*==============================================================================*/
+/*==============================================================================*/
+/*                           HERO BANNER STYLING                              */
+/*==============================================================================*/
+/*==============================================================================*/
+
+.hero-banner {
+    width: 100%;
+    height: 600px;
+
+}
+
+.hero-banner-img {
+    width: 1500px;
+    height: 100%;
+    margin: auto;
+    background-image: url(images/herobanner1.jpg);
+    background-size: cover;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1),rgba(0, 0, 0, 1),rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0));
+    position: relative;
+}
+
+.banner-slider-buttons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.banner-slider-buttons button {
+    
+    width: 84px;
+    height: 250px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 2rem;
+    font-weight: 100;
+    padding: 0px;
+    
+}
+
+.banner-slider-buttons button:focus {
+    border: #0a7cd1 2px solid;
+    outline:white 2px solid;
+    margin: 2px;
+    border-radius: 4px;
+}
+
+.button-left {
+    text-shadow: #000000 -2px 0px 0px;
+}
+
+.button-right {
+    text-shadow: #000000 2px 0px 0px;
+}
